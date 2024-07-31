@@ -1,0 +1,241 @@
+body {
+    margin: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  }
+
+p {
+    font-size: 20px;
+    color: black;    
+}
+
+.detail{
+    margin-right: 30%;
+    margin-bottom: 15%;
+}
+
+.detail h1 {
+    font-size: 25px;
+    color: rgb(0, 0, 0);
+    margin-bottom: 20px;
+}
+
+span {
+    color: rgb(161, 154, 168);
+}
+
+.detail p {
+    color: black;
+    line-height: 30px;
+    font-size: 15px;
+}
+
+.detail a {
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #001f3f;
+    display: inline-block;
+    margin: 10px 0;
+    border: none;
+}
+
+.contact-btn {
+    background-color: #001f3f;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.download-cv i {
+    margin-left: 5px;
+}
+
+.images {
+    width: 46%;
+    height: 40%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+    margin-bottom: 250px;
+}
+
+.images img {
+    height: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    border-radius: 10px;
+}
+
+p.country {
+    font-weight: 900;
+}
+
+nav{
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px;
+    align-items: center;
+}
+
+nav .left ul {
+    display: flex;
+    align-items: center;
+    padding: 0;
+  }
+  
+  nav .left ul img {
+    margin-right: 40px;
+  }
+  
+  nav .left ul li a {
+    color: black;
+    text-decoration: none;
+    font-weight: 800;
+  }
+  
+  nav .left ul .active a {
+    font-weight: bold;
+    color: black;
+  }
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+  }
+
+.left ul {
+    display: flex;
+    align-items: center;
+}
+
+.left ul li {
+    list-style-type: none;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.right button {
+    padding: 10px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 15%;
+}
+
+.right button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+}
+
+h1 {
+    margin: 10px auto;
+    width: 200px;
+    font-size: medium;
+}
+
+form{
+    margin: 50px auto;
+    width: 300px;
+}
+
+form div {
+    margin-bottom: 3%;
+
+}
+
+input, select, textarea{
+    width: 100%;
+    box-sizing: border-box;
+}
+
+textarea {
+    resize: vertical;
+}
+
+form label {
+    font-weight: bold;
+    color: black;
+}
+
+form button {
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 20px;
+    font-weight: bold;
+    color: white;
+    float: right;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: rgb(221, 174, 21);
+    transition: 0.5s;
+}
+
+nav{
+    background-color: #dbdbdb;
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+}
+
+.left ul {
+    display: flex;
+    align-items: center;
+}
+
+.left ul li {
+    list-style-type: none;
+}
+
+.left ul li a {
+    text-decoration: none;
+    color: black;
+    padding-right: 20px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+.right button {
+    padding: 10px;
+    background-color:black;
+    border: none;
+    border-radius: 15%;
+}
+
+.right button a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    border-radius: 15px;
+}

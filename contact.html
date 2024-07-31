@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css"/> 
+    <title>Contact</title>
+
+</head>
+<body>
+
+    <nav>
+
+        <div class="left">
+            <ul>
+              <img
+                class="logo"
+                src="assets/instagram.png"
+                alt="logo-image"
+              />
+    
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./contact.html">My Project</a>
+              </li>
+            </ul>
+          </div>
+
+    <div class="right">
+        <button>
+                <a href="">Contact Me</a>
+        </button>
+        
+     </div>
+
+    </nav>
+
+        <div    style="
+                width: 50%;
+                margin: 300px;
+                padding: 5%;
+                margin-top: 70px;  
+            ">
+<!-- ======Formulir======== -->
+
+<h1> Welcome to Login Page, </h1> 
+    
+    <form>
+
+        <div>
+
+            <label for="nameInput">Name</label>
+            <input id="nameInput" type="text" required placeholder="input your name"/>
+
+        </div>
+
+        <div>
+            
+            <label for="emailInput">Email</label>
+            <input id="emailInput" type="email" />
+
+        </div>
+
+        <div>
+            
+            <label for="numberInput">Phone Number</label>
+            <input id="numberInput" type="number" />
+            
+        </div>
+
+        <div>
+            
+            <label for="subjectInput">Subject</label>
+            <select id="subjectInput">
+            <option hidden>Select Option</option> 
+            <option>Frontend Developer</option> 
+            <option>Backend Developer</option> 
+            <option>Fullstack Developer</option> 
+            
+            </select>
+
+            <!-- <input id="positionInput" type="" /> -->
+
+        </div>
+
+        <div>
+
+            <label for="messageInput">Your Message</label>
+            <textarea id="messageInput"></textarea>
+
+        </div>
+
+        <div>
+
+            <button type="button" onclick="getData()">Submit</button>
+
+        </div>
+
+
+    </form>
+
+
+</body>
+
+</html>
