@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Project</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link rel="stylesheet" href="navbar.css" />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  </head>
+
+  <body>
+    <!-- NavBar -->
+    <nav>
+
+      <div class="left">
+          <ul>
+            <img
+              class="logo"
+              src="assets/instagram.png"
+              alt="logo-image"
+            />
+  
+            <li class="active2">
+              <a href="./index.html">Home</a>
+            </li>
+            <li class="click">
+              <a href="./blog.html">My Project</a>
+            </li>
+            <li class="active2">
+              <a href="./testimonial.html">Testimonial</a>
+            </li>
+          </ul>
+        </div>
+
+    <div class="navbar-right">
+
+        <a href="contact.html" class="navbar-contact-btn"> Contact Me </a>
+
+      <button id="hamburger-button" onclick="toggleNavbar()">
+        <i class="fa-solid fa-bars fa-2x"></i>
+      </button>
+       
+   </div>
+
+  </nav>
+
+    <ul class="hamburger-container hamburger-hide" id="hamburger-container">
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./index.html">Home</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./blog.html">My Project</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./testimonial.html">Testimonial</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./contact.html">Contact Me</a>
+      </li>
+    </ul>
+
+    <!-- Blog -->
+    <!-- Form -->
+
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>Add My Project</h1>
+            <div>
+              <label for="input-blog-title">Project Name</label>
+              <input id="input-blog-title" /> 
+            </div>
+            <div class="date-container">
+              <div class="date-field">
+                  <label for="start-date">Start Date</label>
+                  <input type="date" id="start-date" name="startDate" required>
+              </div>
+              <div class="date-field">
+                  <label for="end-date">End Date</label>
+                  <input type="date" id="end-date" name="endDate" required>
+              </div>
+          </div>
+            <div>
+              <label for="input-blog-content">Content</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+
+            <div class="technologies-detail">
+              <input type="radio" name="technologies" id="dot-1">
+              <input type="radio" name="technologies" id="dot-2">
+              <input type="radio" name="technologies" id="dot-3">
+              <span class="technologies-title">technologies</span>
+              <div class="category">
+                <label for="dot-1">
+                    <span class="dot one"></span>
+                    <span class="technologies">Node Js</span>
+                </label>
+                <label for="dot-2">
+                  <span class="dot two"></span>
+                  <span class="technologies">React Js</span>
+                </label>
+               <label for="dot-3">
+                  <span class="dot three"></span>
+                 <span class="technologies">Next Js</span>
+               </label>
+              </div>
+          </div>
+
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Choose</p>
+                  <img
+                    src="./assets/download.png"
+                    alt="file"
+                    style="width: 40px"
+                  />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Post Blog</button>
+            </div>
+          </form>
+        </div>
+      </div>
+
+      <div id="test"></div>
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <!-- dynamic content would be here -->
+
+      </div>
+    </div>
+
+    <div class="container">
+
+    </div>
+    <script src="navbar.js"></script>
+    <script src="Blog.js"></script>
+  </body>
+</html>

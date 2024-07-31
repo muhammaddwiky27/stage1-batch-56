@@ -1,133 +1,140 @@
-<!-- <!DOCTYPE html>
+<!DOCTYPE html>
+
+<html lang="en">
 <head>
-
-<title>
-    Belajar Programming
-</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css"/>  
-    <title>Navigator</title>
+    <link rel="stylesheet" href="style.css"/> 
+    <link rel="stylesheet" href="navbar.css"/>
+    <link rel="stylesheet" href="index.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>  
+    <title>Home</title>
 
 </head>
-
 <body>
 
-        <div 
-                style="
-                border: 5px black solid;
-                width: 30%;
-                margin: auto;
-                display: block;
-                padding: 3%;
-                box-shadow: 0px 0px 20px red;
-                border-radius: 20px;
-            "> 
-            <h1 style="margin: 5px; font-size: medium;"> Hii Welcome My Profile </h1> 
-            <p> Saya adalah orang yang pantang menyerah dan tidak pernah putus asa,
-                walaupun skill programing saya masih minim tetapi tidak menjadi hambatan
-                untuk saya menyerah dan terus belajar dan menggapai cita-cita saya</p>
+    <nav>
 
-            <div class="button">
-
-                <a href="#">Contact</a> 
-
-                <div class="download"> 
-                    <p style="margin: 5px; font-size: medium; padding: 20px; width: 40px;">Download CV</p>
-                        <img
-                          src="assets/download.png"
-                          alt="download"
-                          style="width: 30px; margin: auto; padding: 100%;"
-                        /> 
-              </div>
-
-            </div>
-
-            <div style="display: flex; padding: 10px; justify-content: center; background-color: black;">
-
-            </div>
+        <div class="left">
+            <ul>
+              <img
+                class="logo"
+                src="assets/instagram.png"
+                alt="logo-image"
+              />
     
-            <img
-                src="assets/Foto Muhammad Dwiki Ariyadi.jpg"
-                alt="profile"
-                style="width: 40%; display: block; margin: auto; border-radius: 20px;"
-            />
+              <li class="active">
+                <a href="./index.html">Home</a>
+              </li>
+              <li>
+                <a href="./blog.html">My Project</a>
+              </li>
+              <li>
+                <a href="./testimonial.html">Testimonial</a>
+              </li>
+            </ul>
+          </div>
 
-            <h2 style="margin: 20px; font-size: 30px;"> Muhammad Dwiki Ariyadi</h2>
-            <p style="margin: 5px; font-size: 20px;"> Junior Back End Development</p>
+          <div class="navbar-right">
+
+            <a href="contact.html" class="navbar-contact-btn">Contact Me</a>
+    
+    
+          <button id="hamburger-button" onclick="toggleNavbar()">
+            <i class="fa-solid fa-bars fa-2x"></i>
+          </button>
+
+    </nav>
+
+    <ul class="hamburger-container hamburger-hide" id="hamburger-container">
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./index.html">Home</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./blog.html">My Project</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./testimonial.html">Testimonial</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large; background-color: rgb(204, 198, 198);">
+        <a href="./contact.html">Contact Me</a>
+      </li>
+    </ul>
+
+        <div    style="
+                border: 3px black solid;
+                width: 50%;
+                height: 360px;
+                margin: 300px;
+                padding: 5%;
+                box-shadow: 0px 0px 20px rgb(114, 106, 106);
+                border-radius: 20px;    
+                margin-top: 50px;  
+            ">
+
+        <div class="images">
+            <img src="assets/foto-me.png"
+                 alt="profile">
+                 <table style="display: flex; justify-content: center; margin-top: 280px;"> 
+                  <tr> 
+                      <th style="border: none; font-size: 20px; ">Muhammad Dwiki Ariyadi</th> 
+                  </tr>  
+                  <tr> 
+                      <td style="border: none;text-align: center;font-size: 13px;">Junior Back-End Developer</td> 
+                  </tr> 
+                 </table> 
+      
         </div>
-    </body>
-</html>
 
-================================================================ -->
+        <!-- <h2 class="customcolor"> Muhammad Dwiki Ariyadi</h2>
+                  <p class="description"> Junior Back End Development</p> -->
 
-<!DOCTYPE html> 
-<html lang="en"> 
-<head> 
-    <meta charset="UTF-8"> 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
-    <title>Document</title> 
-</head> 
-<body> 
- 
-    <div style="background-color:#ffffff; 
-                width: 600px; 
-                margin: auto; 
-                padding: 20px; 
-                border-radius: 10px; 
-                box-shadow: 0px 0px 25px rgba(0,0,0,0.1); 
-                display: block;"> 
-                 
-            <h1 style="font-family: arial,sans-serif; 
-                   font-size: 24px; color: black solid;">Hi Welcome to my hut</h1> 
-                    
-            <p style="color: black solid;">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente molestiae eius optio incidunt facilis alias, officiis laudantium cumque ex iste cupiditate voluptatum error vitae consequuntur accusantium. Pariatur commodi voluptates vero.</p> 
-             
-            <button style="background-color: black; color: white; 
-            border-radius: 150px; 
-            width: 13%; 
-            padding: 5px; 
-            border: none;">contact</button> 
-             
-            <p>download CV <i class="fa-solid fa-download"></i></p> 
- 
-            <div style="background-color:#ffffff; 
-            width: 300px; 
-            margin: auto; 
-            padding: 10px; 
- 
-            border-radius: 5px; 
-             
-            display: block; 
-            text-align: center; 
-            justify-content: space-between;"> 
-             
-           <div style="display: flex; 
-           justify-content: center; /* Untuk meratakan ikon di tengah secara horizontal */ 
-           gap: 30px; /* Jarak horizontal antar ikon */ 
-           padding: 10px;"> 
 
-            <i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i> 
-            <i class="fa-brands fa-square-instagram fa-xl" style="color: #000000;"></i> 
-            <i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i> 
-            <i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i></div> 
- 
-            <div style="background-color: #ffffff;"> 
-            <img src="assets/Foto Muhammad Dwiki Ariyadi.jpg" 
-           style="width: 80%;height: 20%;border-radius: 5%;margin-top: 10%;"> 
-           <table style="display: flex;justify-content: center;"> 
-            <tr> 
-                <th style="border: none;font-size: 20px;">Muhammad Dwiki Ariyadi</th> 
-            </tr>  
-            <tr> 
-                <td style="border: none;text-align: center;font-size: 13px;">Junior Back-End Developer</td> 
-            </tr> 
-           </table> 
-             
-       </div> 
- 
-        </div> 
-</body>    
+        <div class="detail">
+            <h1>I'M Muhammad Dwiki <span>Ariyadi</span></h1>
+            <p>Saya orangnya pekerja keras dan rajin akan melakukan sesuatu hal dan juga saya orangnya dapat dipercaya, karena saya selalu memegang tinggi akan tanggung jawab suatu pekerjaan yang saya lakukan.
+            <br> Untuk selengkapnya saya cek cv saya, terima kasih.
+            </p>
+
+            <button class="contact-btn">Contact</button>
+            
+            <a href="#" class="download-cv">Download CV <i class="fa-solid fa-download"></i></a>
+
+        <!-- <a href="#">Contact</a>
+
+        <p>Download CV <i class="fa-solid fa-download"></i></p>  -->
+        
+        <div style="display: flex; margin-right: 65%; margin-top: 50px;
+        justify-content: center; /* Untuk meratakan ikon di tengah secara horizontal */ 
+        gap: 30px; /* Jarak horizontal antar ikon */ 
+        padding: 10px;"> 
+
+         <i class="fa-brands fa-linkedin fa-xl" style="color: #000000;"></i> 
+         <i class="fa-brands fa-square-instagram fa-xl" style="color: #000000;"></i> 
+         <i class="fa-brands fa-facebook fa-xl" style="color: #000000;"></i> 
+         <i class="fa-brands fa-twitter fa-xl" style="color: #000000;"></i>
+         
+     </div> 
+
+     <!-- <h2 class="customcolor"> Muhammad Dwiki Ariyadi</h2>
+                  <p class="description"> Junior Back End Development</p> -->
+
+        </div>
+        
+        <!-- <div style="background-color: #ffffff;"> 
+          <img src="assets/Foto Muhammad Dwiki Ariyadi.jpg" 
+         style="width: 20%; height: 20%;border-radius: 15px; margin-left: 80%; display: flex; align-items: end; "> 
+        <table style="display: flex;justify-content: end;">  -->
+          <!-- <tr> 
+              <th style="border: none;font-size: 20px;">Muhammad Dwiki Ariyadi</th> 
+          </tr>  
+          <tr> 
+              <td style="border: none;text-align: center;font-size: 13px;">Junior Back-End Developer</td> 
+          </tr> 
+         </table>  -->
+
+</body>
+
+<script src="navbar.js"></script>
+
 </html>
