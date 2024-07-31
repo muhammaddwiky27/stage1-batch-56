@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css"/> 
+    <link rel="stylesheet" href="navbar.css"/> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"/>
+    <title> Contact Me</title>
+
+</head>
+<body>
+<!-- NavBar -->
+<nav>
+
+  <div class="left">
+      <ul>
+        <img
+          class="logo"
+          src="assets/instagram.png"
+          alt="logo-image"
+        />
+
+        <li class="active1">
+          <a href="./index.html">Home</a>
+        </li>
+        <li class="active1">
+          <a href="./blog.html">My Project</a>
+        </li>
+        <li class="active1">
+          <a href="./testimonial2.html">Testimonial</a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="navbar-right">
+
+      <a href="contact.html" class="navbar-contact-btn">Contact Me</a>
+
+
+    <button id="hamburger-button" onclick="toggleNavbar()">
+      <i class="fa-solid fa-bars fa-2x"></i>
+    </button>
+
+</nav>
+
+    <ul class="hamburger-container hamburger-hide" id="hamburger-container">
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large;">
+        <a href="./index.html">Home</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large;">
+        <a href="./blog.html">My Project</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large;">
+        <a href="./testimonial2.html">Testimonial</a>
+      </li>
+      <li style="border: 2px solid white; color: white; font-weight: bold; font-size: x-large;">
+        <a href="./contact.html">Contact Me</a>
+      </li>
+    </ul>
+
+        <!-- FORMULIR -->
+
+        <h1> GET IN TOUCH </h1> 
+    
+    <form>
+
+        <div>
+
+            <label for="nameInput">Name</label>
+            <input id="nameInput" type="text" required placeholder="input your name"/>
+
+        </div>
+
+        <div>
+            
+            <label for="emailInput">Email</label>
+            <input id="emailInput" type="email" />
+
+        </div>
+
+        <div>
+            
+            <label for="numberInput">Phone Number</label>
+            <input id="numberInput" type="number" />
+            
+        </div>
+
+        <div>
+            
+            <label for="subjectInput">Subject</label>
+            <select id="subjectInput">
+            <option hidden>Select Option</option> 
+            <option>Frontend Developer</option> 
+            <option>Backend Developer</option> 
+            <option>Fullstack Developer</option> 
+            
+            </select>
+
+            <!-- <input id="positionInput" type="" /> -->
+
+        </div>
+
+        <div>
+
+            <label for="messageInput">Your Message</label>
+            <textarea id="messageInput"></textarea>
+
+        </div>
+
+        <div>
+
+            <button type="button" onclick="getData()">Submit</button>
+
+        </div>
+
+
+    </form>
+
+
+</body>
+<script src="navbar.js"></script>
+
+</html>
